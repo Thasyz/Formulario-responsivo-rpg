@@ -5,14 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="assents/css/main.css">
-  <title>Formulario Rpg</title>
+  <title>Cadastro</title>
 </head>
 
 <body>
+ 
+  <div class="Gradiente">
   <div class="container">
   <div class="form-image">
     <img src="img/game.svg">
-</div>
+  </div>
 <div class="form">
   <form action="#">
       <div class="form-header">
@@ -27,12 +29,21 @@
 
         <div class="input-group">
       <div class="input-box">
-<label for="username">Username</label>
+<label for="name">Data de nascimento</label>
+<input id="username" type="date" name="date" required>
+</div>
+
+<div class="input-box">
+  <label for="name">Username</label>
+  <input id="username" type="text" name="username" placeholder="digite seu usuario" required>
+  </div>
+      <div class="input-box">
+<label for="name">Nome</label>
 <input id="username" type="text" name="username" placeholder="digite se nome" required>
 </div>
-    
+      
 <div class="input-box">
-<label for="Lastname">Lastname</label>
+<label for="Lastname"> Sobrenome </label>
 <input id="Lastname" type="text" name="Lastname" placeholder="digite se sobrenome" required>
 </div>
 
@@ -92,5 +103,7 @@
   </form>
 </div>
 </div>
-</body>
+</div>
+</div>
+
 </html>

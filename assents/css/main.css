@@ -12,13 +12,15 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(47, 5, 42);
+
 }
+
+
 .container{
   width: 90%;
-  height: 90vh;
+  height:90vh;
   display: flex;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+
 }
 
 .form-image{
@@ -28,10 +30,19 @@ body{
  align-items: center;
  background-color: rgb(189, 142, 233); 
  padding: 1rem;
-
+ border-radius: 30px 0px 0px 30px;
+ box-shadow:
+ 0.3px 0.5px 0.7px rgba(220, 76, 249.03),
+ 0.8px 1.1px 1.6px rgba(220, 76, 249.037),
+ 0.6px 0.9px 1px rgba(220, 76, 249.042),
+ 1.2px 1.8px 1.9px rgba(220, 76, 249.047),
+ 2.6px 3.7px 4px rgba(220, 76, 249.055),
+ 3px 5px 9px rgba(220, 76, 249.09)
+;
 }
 .form-image img{
   width: 31rem;
+  
 }
 
 .form {
@@ -40,11 +51,20 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: rgb(51, 21, 54);
   padding: 3rem;
+  border-radius: 0px 30px 30px 0px ;
+  box-shadow:
+  0.3px 0.5px 0.7px rgba(220, 76, 249.03),
+  0.8px 1.1px 1.6px rgba(220, 76, 249.037),
+  0.6px 0.9px 1px rgba(220, 76, 249.042),
+  1.2px 1.8px 1.9px rgba(220, 76, 249.047),
+  2.6px 3.7px 4px rgba(220, 76, 249.055),
+  3px 5px 9px rgba(220, 76, 249.09)
+;
 }
 .form-header{
-  margin-bottom: 3rem;
+  margin-bottom: 0.1rem;
   display: flex;
   justify-content: space-between;
 }
@@ -68,15 +88,18 @@ body{
 .Login-button button a{
   text-decoration: none;
   font-weight: 500;
+   color: #000000be;
+  ;
+}
+.form-header h1{
   color: #fff;
 }
-
 .form-header h1::after {
 content: ''; 
 display: block;
 width: 5rem;
 height: 0.3rem;
-background-color: rgb(220, 76, 249);
+background-color: rgb(216, 176, 224);
 margin: 0 auto;
 position: absolute;
 border-radius: 10px;
@@ -100,11 +123,18 @@ border-radius: 10px;
   padding: 0.8rem 1.2rem;
   border: none;
   border-radius: 10px;
-  box-shadow: 1px 1px 6px #0000001c;
+  box-shadow:
+  0.3px 0.5px 0.7px rgba(220, 76, 249.03),
+  0.8px 1.1px 1.6px rgba(220, 76, 249.037),
+  0.6px 0.9px 1px rgba(220, 76, 249.042),
+  1.2px 1.8px 1.9px rgba(220, 76, 249.047),
+  2.6px 3.7px 4px rgba(220, 76, 249.055),
+  3px 5px 9px rgba(220, 76, 249.09)
+;
 
 }
 .input-box input:hover{
-  background-color: #eeeeee75;
+  background-color: rgb(233, 124, 255);
   transition: 0.5s;
 
 }
@@ -116,7 +146,7 @@ border-radius: 10px;
 .gender-title h6{
 font-size: 0.75rem;
 font-weight: 600;
-color: #000000c0;
+color: #fff5f5;
 }
 .input-box input::placeholder {
   color: #000000be;
@@ -132,28 +162,69 @@ color: #000000c0;
 .gender-input {
   display: flex;
   align-items: center;
-  }
+  
+ }
   
   .gender-input input{
     margin-right: 0.35rem;
+    margin-bottom: 0.95rem;
     
-    }
+ }
 
 .gender-input label{
   font-size: 0.81rem;
   font-weight: 600;
-color: #000000c0;
+color: #fff5f5;
+margin-bottom: 0.95rem;
+
 }
 .continue-button button {
   width: 100%;
-  margin-top: 2.5rem;
+  margin-top: 0.1rem;
   border: none;
   background-color: rgb(189, 142, 233);
-  padding: 0.62rem;
-  border-radius: 5px;
+  padding: 0.4rem;
+  border-radius: 15px;
   cursor: pointer;
 }
 .continue-button button:hover{
-  background-color: rgba(220, 76, 249);
+  background-color: rgb(220, 76, 249);
   transition: 0.5s;
 }
+
+.continue-button button a{
+  text-decoration: none;
+  font-weight: 500;
+  color: #000000be;
+  font-size: 0.93rem;
+}
+
+.Gradiente{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #671970, #9e17ad, rgb(51, 21, 54) );
+    background-size: 400% 400%;
+    animation-name: background;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes background{
+  0%{
+      background-position-x: 0% ;
+  }
+ 
+  50%{
+    background-position-x: 50%;
+  }
+  100%{
+      background-position-x: 100%;
+  }
+}
+
+  
