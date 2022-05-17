@@ -53,7 +53,6 @@ body{
   align-items: center;
   background-color: rgb(51, 21, 54);
   padding: 3rem;
-  border-radius: 0px 30px 30px 0px ;
   box-shadow:
   0.3px 0.5px 0.7px rgba(220, 76, 249.03),
   0.8px 1.1px 1.6px rgba(220, 76, 249.037),
@@ -93,6 +92,7 @@ body{
 }
 .form-header h1{
   color: #fff;
+
 }
 .form-header h1::after {
 content: ''; 
@@ -106,6 +106,7 @@ border-radius: 10px;
 
 
 }
+
 .input-group{
   display: flex;
   flex-wrap: wrap;
@@ -165,7 +166,7 @@ color: #fff5f5;
   
  }
   
-  .gender-input input{
+.gender-input input{
     margin-right: 0.35rem;
     margin-bottom: 0.95rem;
     
@@ -227,4 +228,191 @@ margin-bottom: 0.95rem;
   }
 }
 
+  @media screen and (max-width: 1330px) {
+    .form-image {
+      display:none ;
+    }
+    .container{
+width: 50%;
+    }
+    .form{
+width: 100%;
+}
+  }
+  @media screen and (max-width: 1064px){
+.container {
+  width: 90%;
+  height:auto
+}
+.input-group {
+  flex-direction: column;
+  overflow-y: scroll;
+  flex-wrap: nowrap;
+  max-height: 10rem;
+  padding-right:5rem;
+
+
+}
+.gender-inputs{
+  margin-top: auto;
+}
+.gender-group{
+  flex-direction: column;
+}
+.gender-input{
+  margin-top: 0.5rem;
+}
+  }
+  @media screen and (max-width: 1330px) {
+    .form-image {
+      display:none ;
+    }
+    .container{
+width: 50%;
+justify-content: center;
+height:auto;
+justify-content: center;
+}
+    
+    .form {
+width: 100%;
+
+}
+.Login-button{
+  display: flex;
+  align-items: center;
+}
+.Login-button button{
+  border: none;
+  background-color: rgb(189, 142, 233);
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: -3.5rem;
+}
+.form-header h1{
+  color: #fff;
+  margin-top: -2.7rem;
+}
+.form .title{
+  font-size: 10px;
+}
+}
+
+  @media screen and (max-width: 915px) {
+.container {
+  width: 95%;
+  height:auto;
+}
+.Login-button{
+  display: flex;
+  align-items: center;
+}
+.Login-button button{
+  border: none;
+  background-color: rgb(189, 142, 233);
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: -3.5rem;
+}
+
+.form{
+  width: 65%;
+  }
+.input-group {
+  flex-direction: column;
+  overflow-y: scroll;
+  flex-wrap: nowrap;
+  max-height: 6rem;
+  padding-right:2rem;
+}
+.form-header h1{
+  color: #fff;
+  margin-top: -2.7rem;
+}
+.form .title{
+  font-size: 10px;
+}
+.gender-inputs{
+  margin-top: auto;
+  width: auto;
+
+}
+.gender-group{
+  flex-direction: column;
+
+}
+.gender-input{
+  margin-top: auto;
+}
+.continue-button button {
+  width: 100%;
+  margin-top: auto;
+  border: none;
+  background-color: rgb(189, 142, 233);
+  padding: 0.4rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
+  }
+  
+  @media screen and (max-width: 768px) {
+.container {
+  width: 95%;
+  height:auto;
+  justify-content: center;
+}
+.Login-button{
+  display: flex;
+  align-items: center;
+}
+.Login-button button{
+  border: none;
+  background-color: rgb(189, 142, 233);
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: -3.5rem;
+}
+
+.form{
+  width: 65%;
+  }
+.input-group {
+  flex-direction: column;
+  overflow-y: scroll;
+  flex-wrap: nowrap;
+  max-height: 6rem;
+  padding-right:2rem;
+}
+.form-header h1{
+  color: #fff;
+  margin-top: -2.7rem;
+}
+.form .title{
+  font-size: 10px;
+}
+.gender-inputs{
+  margin-top: auto;
+  width: auto;
+
+}
+.gender-group{
+  flex-direction: column;
+
+}
+.gender-input{
+  margin-top: auto;
+}
+.continue-button button {
+  width: 100%;
+  margin-top: auto;
+  border: none;
+  background-color: rgb(189, 142, 233);
+  padding: 0.4rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
+  }
   
